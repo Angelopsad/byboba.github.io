@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outfit Selector | Minimalist</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="outfit-container">
+        <!-- Верхняя одежда -->
+        <div class="row row-top">
+            <button class="nav-btn prev-btn" onclick="changeImage('top', -1)">&#8592;</button>
+            <div class="image-wrapper">
+                <img id="top-image" src="top/1.png" alt="Top" class="active">
+            </div>
+            <button class="nav-btn next-btn" onclick="changeImage('top', 1)">&#8594;</button>
+        </div>
+
+        <!-- Нижняя одежда -->
+        <div class="row row-bot">
+            <button class="nav-btn prev-btn" onclick="changeImage('bot', -1)">&#8592;</button>
+            <div class="image-wrapper">
+                <img id="bot-image" src="bot/1.png" alt="Bottom" class="active">
+            </div>
+            <button class="nav-btn next-btn" onclick="changeImage('bot', 1)">&#8594;</button>
+        </div>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
